@@ -22,6 +22,9 @@
   height: 462px;
   width: 388px;
   background-color: #d9d9d9;
+
+  border-radius: 10px;
+
 }
 
 .countdown_container {
@@ -75,7 +78,6 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 87px;
-  text-align: center;
   font-size: 20px;
 }
 
@@ -87,8 +89,8 @@
   }
 
   .bg_img {
-    height: 462px;
-    width: 75%;
+    width: 70%;
+    height: 440px;
     background-color: #d9d9d9;
   }
 
@@ -102,6 +104,6 @@
 
   .footer_section {
     margin-top: 60px;
-    padding: 16px !important;
+    padding: 20px !important;
   }
 }

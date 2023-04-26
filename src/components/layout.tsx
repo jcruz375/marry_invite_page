@@ -9,20 +9,22 @@ const inter = Inter({ subsets: ['latin'] })
 
 interface layoutPropsType {
   children: JSX.Element;
-} 
+}
 
-export function Layout({children} : layoutPropsType) {
+export function Layout({ children }: layoutPropsType) {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <Image
-          src={logoImg}
-          alt="logo C e E"
-          width={136}
-          height={50}
-        />
+        <Link href="/">
+          <Image
+            src={logoImg}
+            alt="logo C e E"
+            width={136}
+            height={50}
+          />
+        </Link>
         <nav>
-          <Link href="/">
+          <Link href="/nossa_historia">
             <p className='font-serif text-2xl'>
               Nossa história
             </p>
