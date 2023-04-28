@@ -37,7 +37,6 @@ export function Layout({ children }: layoutPropsType) {
         </button>
 
         <div className={`${styles.drawer} ${isDrawerOpen ? `${styles.open}` : `${styles.drawer_none}`}`}>
-        {/* <div className={ isDrawerOpen ?  `${styles.drawer_visible}` : `${styles.drawer_none}`}> */}
           <Drawer />
         </div>
 
@@ -52,7 +51,7 @@ export function Layout({ children }: layoutPropsType) {
               Presentes
             </p>
           </Link>
-          <Link href="/">
+          <Link href="/confirmar_presenca">
             <p className='font-serif text-2xl'>
               Confirmar presença
             </p>

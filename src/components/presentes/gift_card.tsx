@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { FunctionComponent } from "react";
-import styles from "../../styles/gifts.module.scss"
+import styles from "../../styles/presentes.module.scss"
 
 interface GiftCardProps {
   imagePath: StaticImageData;

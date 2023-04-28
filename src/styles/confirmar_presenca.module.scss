@@ -1,0 +1,15 @@
+.input {
+  border: 1px solid #EBE1D5;
+  
+  &:focus-visible {
+    border: 1px solid #EBE1D5 !important;
+
+  }
+}
+
+.button {
+  height: 49px;
+  width: 174px;
+  background-color: #7AC8AE;
+  color: white;
+}
