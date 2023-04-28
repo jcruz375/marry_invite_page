@@ -31,13 +31,56 @@
   }
 }
 
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -80vw;
+  height: 100vh;
+  width: 80vw;
+  background-color: white;
+  z-index: 20;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.drawer.open {
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-name: slide-in-right;
+}
+
+.drawer_button {
+  display: none;
+}
+
+.drawer_none {
+  display: none;
+}
+
+.drawer_visible {
+  display: inline;
+}
+
 
 @media (max-width: 768px) {
   .header {
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     nav {
       display: none;
     }
+  }
+
+  .drawer_button {
+    display: inline;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    right: -80vw;
+  }
+  100% {
+    right: 0;
   }
 }
