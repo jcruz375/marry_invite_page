@@ -8,7 +8,7 @@ import GiftCard from "./gift_card";
 
 const GiftsList = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-6 gap-8 mt-11 w-full">
+    <div className="grid grid-cols-2 sm:grid-cols-6 gap-8 justify-items-center items-center mt-11 w-full">
       <GiftCard
         imagePath={coffeAirportImg}
         title="Café no aeroporto"

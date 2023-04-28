@@ -25,75 +25,87 @@ export default function OurHistory() {
         <p className='font-serif text-xl text-center mt-16'>
           Quando nos conhecemos, nem imaginávamos que um dia tudo isso acabaria como um final de conto de fadas, com a realização do nosso grande sonho: o casamento! O coração aperta, o dia está chegando, e começa a passar um filme de tudo o que passamos para chegar até aqui. E como é bom relembrar cada pedacinho da nossa história de amor.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 grid-rows-3 gap-8 mt-11 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-4 grid-rows-3 gap-8 mt-11 w-full">
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_1}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_2}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_3}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_4}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_5}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_6}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_7}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_8}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_9}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_10}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_11}
               alt="foto de claudia e eduardo"
             />
           </div>
           <div className="flex justify-center items-center">
             <Image
+              className={`w-3/5 sm:w-full`}
               src={photo_12}
               alt="foto de claudia e eduardo"
             />
