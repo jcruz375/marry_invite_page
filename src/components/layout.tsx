@@ -29,7 +29,7 @@ export function Layout({ children }: layoutPropsType) {
               Nossa história
             </p>
           </Link>
-          <Link href="/">
+          <Link href="/presentes">
             <p className='font-serif text-2xl'>
               Presentes
             </p>
