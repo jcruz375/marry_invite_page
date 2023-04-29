@@ -12,7 +12,7 @@ export default function Presence() {
   };
 
   return (
-    <main className='max-w-lg mx-auto px-4 sm:px-16'>
+    <main className='max-w-md mx-auto px-0 sm:px-16'>
       <section className="flex flex-col justify-start items-center min-h-screen">
         <p className='font-serif text-5xl'>
           Confirmação de presença
