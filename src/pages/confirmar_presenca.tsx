@@ -20,7 +20,7 @@ export default function Presence() {
         <p className='font-serif text-2xl text-center mt-11'>
           Faça parte da nossa história de amor, confirme sua presença.
         </p>
-        <section className="w-11/12 sm:w-96 px-4 mx-auto mt-24">
+        <section className="w-9/12 sm:w-96 px-4 mx-auto mt-24">
           <input
             type="text"
             placeholder='Nome completo'
