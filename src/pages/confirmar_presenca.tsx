@@ -12,7 +12,7 @@ export default function Presence() {
   };
 
   return (
-    <main className='max-w-md mx-auto px-4 sm:px-16'>
+    <main className='max-w-lg mx-auto px-4 sm:px-16'>
       <section className="flex flex-col justify-start items-center min-h-screen">
         <p className='font-serif text-5xl'>
           Confirmação de presença
@@ -20,7 +20,7 @@ export default function Presence() {
         <p className='font-serif text-2xl text-center mt-11'>
           Faça parte da nossa história de amor, confirme sua presença.
         </p>
-        <section className="w-11/12 sm:w-96 px-4 mx-auto mt-24">
+        <section className="w-full sm:w-96 px-4 mx-auto mt-24">
           <input
             type="text"
             placeholder='Nome completo'
