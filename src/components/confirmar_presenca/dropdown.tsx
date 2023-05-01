@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import { AiOutlineDown } from 'react-icons/ai';
 
+interface DropDownProps {
+  totalAdults: number;
+  setTotalAdults: (value: number) => void;
+}
+
 type Option = {
   value: number;
   label: string;
@@ -19,13 +24,14 @@ const options: Option[] = [
   { value: 10, label: '10' },
 ];
 
-function Select() {
+function Select({totalAdults, setTotalAdults}: DropDownProps) {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
 
   function handleSelectChange(event: React.ChangeEvent<HTMLSelectElement>) {
     const value = parseInt(event.target.value, 10);
     const selected = options.find((option) => option.value === value);
     setSelectedOption(selected || null);
+    setTotalAdults(value)
   }
 
   return (
