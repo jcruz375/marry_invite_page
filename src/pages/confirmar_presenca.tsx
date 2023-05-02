@@ -14,11 +14,18 @@ export default function Presence() {
   const [totalAdults, setTotalAdults] = useState(0);
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [isNameComplete, setIsNameComplete] = useState(false);
+
+  function validateNameComplete(name: string): boolean {
+    const partName = name.trim().split(' ');
+    setIsNameComplete(partName.length >= 2)
+    return partName.length >= 2;
+  }
 
   const handleConfirmPresenceForm = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    if (name && (phoneNumber !== null || phoneNumber !== undefined)) {
+    if (validateNameComplete(name)) {
       if (phoneNumber != '') {
         try {
           const docRef = await addDoc(collection(db, "guests"), {
@@ -41,19 +48,14 @@ export default function Presence() {
         }
       } else {
         // todo mensagem de erro campos obrigatorios
-        alert('NECESSARIO INFORMAR NOME E TELEFONE PARA CONFIRMAR PRESENÇA!');
+        alert('Necessário informar o telefone');
       }
     } else {
       // todo mensagem de erro campos obrigatorios
-      alert('NECESSARIO INFORMAR NOME E TELEFONE PARA CONFIRMAR PRESENÇA!');
+      alert('Necessário informar o nome completo');
     }
 
   }
-
-  useEffect(() => {
-    console.log('ISCONFIRMED', isConfirmed);
-    
-  }, [isConfirmed]);
 
   return (
     <main className='max-w-md mx-auto px-0 sm:px-16'>
@@ -69,10 +71,10 @@ export default function Presence() {
             <input
               type="text"
               placeholder='Nome completo'
-              className={`w-full h-16 rounded px-5 ${styles.input}`}
+              className={`w-full h-16 rounded px-5 ${styles.input} ${!isNameComplete ? 'border-2 border-rose-500' : 0}`}
               value={name}
               onChange={(event) => {
-                setName(event.target.value)
+                setName(event.target.value);
               }}
             />
             <article className="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-9">
