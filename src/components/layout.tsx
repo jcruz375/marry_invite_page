@@ -46,9 +46,14 @@ export function Layout({ children }: layoutPropsType) {
               Nossa história
             </p>
           </Link>
-          <Link href="/presentes">
+          <Link target="_blank" href="https://claudiaeduardo.smartpos.app/">
             <p className='font-serif text-2xl'>
               Presentes
+            </p>
+          </Link>
+          <Link href="/local">
+            <p className='font-serif text-2xl'>
+              Local
             </p>
           </Link>
           <Link href="/confirmar_presenca">

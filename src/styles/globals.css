@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~leaflet/dist/leaflet.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,6 +18,6 @@
 }
 
 body {
-  color: black;
+  color: #373736;
   background-color: #FEF7EF; 
 }

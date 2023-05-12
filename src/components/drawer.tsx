@@ -39,6 +39,11 @@ const Drawer = () => {
                       Presentes
                     </p>
                   </Link>
+                  <Link href="/local">
+                    <p className='font-serif text-2xl'>
+                      Local
+                    </p>
+                  </Link>
                   <Link href="/confirmar_presenca" onClick={closeDrawer}>
                     <p className='font-serif text-2xl'>
                       Confirmar presença
