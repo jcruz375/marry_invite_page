@@ -1,4 +1,5 @@
-import { MapComponent } from "@/components/local/map_component";
+import dynamic from "next/dynamic";
+const MapComponent = dynamic(() => import('../components/local/map_component'), { ssr: false });
 import Image from "next/image"
 import locationImage from "../../public/assets/espaco_vereda.png";
 
@@ -12,7 +13,7 @@ export default function Address() {
         <p className='font-serif text-2xl text-center sm:text-left mt-11'>
           Não percam nossa linda e emocionante cerimônia e aproveite para comemorar e compartilhar a felicidade neste dia tão especial. Contamos com você para ser ainda mais especial!
         </p>
-        <article className="w-full mt-36 p-10 pb-0" style={{backgroundColor: '#FDF2E6'}}>
+        <article className="w-full mt-36 p-10 pb-0" style={{ backgroundColor: '#FDF2E6' }}>
           <header className="flex flex-col sm:flex-row justify-start items-center">
             <Image
               className="ml-8 sm:ml-0"
