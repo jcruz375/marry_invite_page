@@ -34,7 +34,7 @@ const Drawer = () => {
                       Nossa história
                     </p>
                   </Link>
-                  <Link href="/presentes" onClick={closeDrawer}>
+                  <Link target="_blank" href="https://claudiaeduardo.smartpos.app/" onClick={closeDrawer}>
                     <p className='font-serif text-2xl'>
                       Presentes
                     </p>
