@@ -1,4 +1,3 @@
-import GiftsList from "@/components/presentes/gifts_list";
 
 export default function Gifts() {
   return (
@@ -12,7 +11,7 @@ export default function Gifts() {
           algumas opções de passeios e experiências.
           Com amor, Claudia e Eduardo.
         </p>
-        <GiftsList />
+        {/* <GiftsList /> */}
       </section>
     </main>
   )
