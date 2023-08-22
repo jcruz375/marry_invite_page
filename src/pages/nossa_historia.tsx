@@ -16,6 +16,10 @@ import photo_14 from '../../public/assets/photo_14.png'
 import photo_15 from '../../public/assets/photo_15.png'
 import photo_16 from '../../public/assets/photo_16.png'
 import photo_17 from '../../public/assets/photo_17.png'
+import photo_18 from '../../public/assets/photo_18.png'
+import photo_19 from '../../public/assets/photo_19.png'
+import photo_20 from '../../public/assets/photo_20.png'
+import photo_21 from '../../public/assets/photo_21.png'
 
 export default function OurHistory() {
   return (
@@ -161,6 +165,34 @@ export default function OurHistory() {
               <Image
                 className={`w-3/5 sm:w-full`}
                 src={photo_17}
+                alt="foto dos padrinhos"
+              />
+            </div>
+            <div className="flex justify-center items-center">
+              <Image
+                className={`w-3/5 sm:w-full`}
+                src={photo_18}
+                alt="foto dos padrinhos"
+              />
+            </div>
+            <div className="flex justify-center items-center">
+              <Image
+                className={`w-3/5 sm:w-full`}
+                src={photo_19}
+                alt="foto dos padrinhos"
+              />
+            </div>
+            <div className="flex justify-center items-center">
+              <Image
+                className={`w-3/5 sm:w-full`}
+                src={photo_20}
+                alt="foto dos padrinhos"
+              />
+            </div>
+            <div className="flex justify-center items-center">
+              <Image
+                className={`w-3/5 sm:w-full`}
+                src={photo_21}
                 alt="foto dos padrinhos"
               />
             </div>

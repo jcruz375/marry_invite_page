@@ -46,7 +46,7 @@ export function Layout({ children }: layoutPropsType) {
               Nossa história
             </p>
           </Link>
-          <Link target="_blank" href="https://claudiaeduardo.smartpos.app/">
+          <Link target="_blank" href="https://sites.icasei.com.br/claudiaeduardo2023/pages/30531345">
             <p className='font-serif text-2xl'>
               Presentes
             </p>
